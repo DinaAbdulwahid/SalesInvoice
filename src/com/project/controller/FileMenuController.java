@@ -179,7 +179,7 @@ public class FileMenuController implements ActionListener{
            
         for(InvoiceItem line : invoice.getItems())
         {
-           String lineCSV = invoice.getAsCSV();
+           String lineCSV = line.getAsCSV();
            itemLines += lineCSV;
            itemLines += "\n"; 
         }
